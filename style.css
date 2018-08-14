@@ -1,0 +1,118 @@
+[v-cloak] {
+	display: none;
+}
+* {
+	font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+}
+.pointy {
+	cursor: pointer;
+}
+
+nav .logo {
+	width: 36px;
+    display: inline-block;
+    height: 34px;
+    vertical-align: middle;
+    background-image: url(./assets/pmartin.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 1;
+    margin: 0 16px;
+}
+
+.sidenav {
+	width: 500px !important;
+	z-index: 99 !important;
+	padding-top: 60px;
+}
+
+.sidenav li>a:hover {
+    background-color: transparent !important;
+}
+.sidenav li:not(.active):hover {
+    background-color: rgba(0,0,0,0.05) !important;
+}
+
+main, footer {
+	padding-left: 500px;
+}
+
+@media only screen and (max-width : 992px) {
+	main, footer {
+		padding-left: 0;
+	}
+}
+
+#list-of-projects {
+	height: 300px;
+	overflow-y: scroll;
+}
+
+.label-text {
+	margin: 12px 0 -12px 16px;
+	font-weight: bold;
+}
+
+.collection-item a {
+	display: block !important;
+}
+span.side-date, div.side-name {
+    padding: 0 32px;
+    margin: 0;
+}
+
+.sidenav li > a {
+    color: rgba(0, 0, 0, 0.87) !important;
+    font-size: 1rem !important;
+    font-weight: normal !important;
+    height: auto !important;
+    line-height: 1.5rem !important;
+    padding: 0 !important;
+}
+
+.valign-wrapper * {
+	display: inline-block;
+	width: auto !important;
+	margin: 16px !important;
+}
+
+.nomarg {
+	margin-bottom: 0 !important
+}
+
+.active .side-name, .active .side-date, .active a, .active span {
+	color: white !important;
+}
+.active {
+	background-color: grey !important;
+}
+
+.loader {
+    border: 4px solid #D1C4E9;
+    border-top: 4px solid #673AB7;
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    display: inline-block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.filters select {
+	width: auto;
+	display: inline-block !important;
+	margin-right: 16px;
+}
+
+.score {
+    float: right;
+    font-family: "Product Sans";
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: dimgrey;
+}
